@@ -1,0 +1,9 @@
+<div>
+	{{vocabulary.hint}}
+	<table border="1" height="35" bgcolor="green">
+		<tr>
+			<td align="center" width="30" style="background-color: moccasin;" ng-repeat = "n in loop(0,vocabulary.shuffledVoc.length)"><p style="font-size: 20px; font-style: bold;">{{vocabulary.shuffledVoc[n]}}</p></td>
+		</tr>
+	</table>
+	<input type="text" ng-model = "UVoc" ng-keypress = "testfunc($event,UVoc)"></input>
+</div>

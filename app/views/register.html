@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	body {
+		background-color: #f2f2f2;
+	}
+	h1 {
+		color: black;
+		text-align: left;
+	}
+	input {
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		padding: 10px;
+		margin-top: 0px;
+	}
+	input[type=text]{
+		display: inline-block;
+		padding: 10px;
+	}
+	p,h4{
+		color: red;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>Nhập vào UserName</h1>
+	<input type="text" placeholder="your username" ng-model = "userID"></input>
+	<input type="button" value="Submit" ng-click="register(userID)"></input>
+	<h1>Server Message</h1>
+	<h4>{{serverMsg[0]}}</h4>
+	<p ng-repeat = "msg in loop(1,serverMsg.length)">{{serverMsg[msg]}}</p>
+</body>
+</html>
